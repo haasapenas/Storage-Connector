@@ -1,0 +1,29 @@
+modLoader = "javafml"
+loaderVersion = "${javafml_dependency}"
+license = "${mod_license}"
+issueTrackerURL = "${mod_issues}"
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+displayURL = "${mod_page}"
+authors = "haasapenas"
+description = '''${mod_description}'''
+[[dependencies.storageconnector]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neoforge_dependency}"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.storageconnector]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_dependency}"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.storageconnector]]
+modId = "refinedstorage"
+type = "required"
+versionRange = "${refinedstorage_dependency}"
+ordering = "AFTER"
+side = "BOTH"
